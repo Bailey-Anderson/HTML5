@@ -18,14 +18,15 @@
 <h1>Shopping Cart</h1>
 <h2>Countdown to purchase:</h2>
 <!--add meter here-->
-
+<meter min="0" max="3" value="2"></meter>
 <!--add figure here-->
-
+<figure>
     <img src="images/tshirt.png" alt="t-shirt">
-    T-shirt size: small, color: blue
-
+    <figcaption>T-shirt size: small, color: blue</figcaption>
+</figure>
 <!--add details here-->
-Credit Cards
+<details>
+    <summary>Credit Cards</summary>
     <p>We accept the following:</p>
     <ul>
         <li>Visa</li>
@@ -35,8 +36,7 @@ Credit Cards
         <li>American Express</li>
         <li>PayPal</li>
     </ul>
-
-
+</details>
 
 <h2>Products</h2>
 <table>
@@ -75,7 +75,16 @@ Credit Cards
 </table>
 
 <!--add template here with id="tr"-->
-
+<template id="tr">
+    <tr>
+        <td>Shirt</td>
+        <td>blue</td>
+        <td>small</td>
+        <td>1</td>
+        <td>9.99</td>
+        <td>&nbsp;</td>
+    </tr>
+</template>
 
 <script>
     const addBtn = document.getElementById('add');

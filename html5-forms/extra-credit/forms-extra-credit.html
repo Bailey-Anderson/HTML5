@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Registration</title>
+    <h1>Account Registration</h1>
+    <style>
+        li {
+            display: inline;
+        }
+        ul {
+            padding-left: 0 !important;
+        }
+        label {
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend id="userType">Type of User</legend>
+            <ul>
+                <label for="userType">What type of user are you?</label>
+                    <li>
+                    <input type="radio" name="customer" id="customer" value="customer">
+                    <label for="customer">Customer</label>
+            </li>
+            <li>
+                    <input type="radio" name="emp/cont" id="emp/cont" value="emp/cont">
+                    <label for="emp/cont">Employee/Contractor</label>
+            </li>
+            <li>
+                    <input type="radio" name="fedEmp/cust" id="fedEmp/cust" value="fedEmp/cust">
+                    <label for="fedEmp/cust">Federal Employee/Contractor</label>
+            </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend id="email">Email</legend>
+            <ul>
+                <li>
+                    <label for="personalEmail">Personal Email Address</label>
+                    <input type="email" name="personalEmail" id="personalEmail" value="">
+                </li>
+                <li>
+                    <label for="businessEmail">Business Email Address</label>
+                    <input type="email" name="businessEmail" id="businessEmail" value="">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend id="password">Password</legend>
+                <p>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" value="">
+                </p>
+        </fieldset>
+        <fieldset>
+            <legend id="useCase">Use Case</legend>
+                <p>
+                    <label for="dropdown">Im interested in: </label>
+                    <select name="interest" id="interest">
+                        <option value="personal">Personal</option>
+                        <option value="business">Business</option>
+                    </select>
+                </p>
+        </fieldset>
+        <fieldset>
+            <legend id="age">Age Verification</legend>
+                <p>
+                    <label for="age">I am over 18 years of age</label>
+                    <input type="checkbox" name="age" id="age" value="">
+                </p>
+        </fieldset>
+    </form>
+</body>
+</html>
